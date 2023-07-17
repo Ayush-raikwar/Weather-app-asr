@@ -51,7 +51,6 @@ export const WeatherView = () => {
             const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
             );
-            console.log(response?.data);
             const tempVal = kelvinToCelsius(response?.data?.main?.temp)
             setTemp(tempVal.toFixed())
             setDescription(response?.data?.weather[0]?.description)

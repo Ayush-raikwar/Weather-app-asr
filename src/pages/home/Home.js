@@ -48,7 +48,6 @@ export const Home = () => {
             const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
             );
-            // console.log(response?.data.name);
             localStorage.setItem(screenTexts.COMMONS.CITY, response?.data?.name)
             navigate(routeTexts.WEATHER_VIEW)
         } catch (error) {
