@@ -35,11 +35,11 @@ export const WeatherView = () => {
         try {
             const apiKey = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
             const response = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
             );
             const data = await response.json();
             const iconCode = data.weather[0].icon;
-            const iconUrl = `http://openweathermap.org/img/wn/${iconCode}@4x.png`;
+            const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
             setIconUrl(iconUrl);
         } catch (error) {
             console.log('Error fetching weather icon:', error);

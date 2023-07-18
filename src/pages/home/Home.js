@@ -28,7 +28,7 @@ export const Home = () => {
     const fetchData = (lat, long) => {
         return new Promise(async (resolve, reject) => {
             try {
-                const url = `http://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=${apiKey}`;
+                const url = `https://api.openweathermap.org/geo/1.0/reverse?lat=${lat}&lon=${long}&limit=1&appid=${apiKey}`;
                 const response = await axios.get(url);
                 const data = response.data;
                 if (response.status === 200 && data.length > 0) {
