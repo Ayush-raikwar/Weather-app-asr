@@ -14,7 +14,7 @@ export const MainContainer = styled.div`
 export const FormMain = styled.form`
     background-color: ${commonStyles.COLORS.WHITE};
     padding: 1rem 0 ;
-    min-width:400px ;
+    width:400px ;
     border-radius: .4rem;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,9 @@ export const FormMain = styled.form`
         color: ${commonStyles.COLORS.THEME};
         margin: 0 1rem;
         font-weight: 600;
+    }
+    @media (max-width: 768px) {
+        width: 92%;
     }
 
 `

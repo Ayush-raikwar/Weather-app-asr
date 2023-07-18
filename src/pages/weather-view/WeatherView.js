@@ -86,7 +86,7 @@ export const WeatherView = () => {
                         <img className='img' src={FeelsLikeIcon} width={26} height={26} />
                         <div>
                             <p>{feelsLikeTemp}°C</p>
-                            <p>Feels like</p>
+                            <p>{screenTexts.WEATHER_VIEW.FELS_LIKE}</p>
                         </div>
                     </div>
                     <SeparatorVertical />
@@ -94,7 +94,7 @@ export const WeatherView = () => {
                         <img className='img' src={HumidityIcon} width={24} height={24} />
                         <div>
                             <p>{humidity}%</p>
-                            <p>Humidity</p>
+                            <p>{screenTexts.WEATHER_VIEW.HUMIDITY}</p>
                         </div>
                     </div>
                 </div>

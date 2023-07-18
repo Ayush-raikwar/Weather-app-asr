@@ -61,6 +61,7 @@ export const Home = () => {
     }
     const handleError = (err) => {
         alert(err)
+        console.error(err);
     }
 
     const handleSubmit = e => {

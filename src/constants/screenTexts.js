@@ -8,6 +8,10 @@ export const screenTexts = {
         BTN: "Get Device Location",
         GET_WEATHER_INFO: "Get Weather Info"
     },
+    WEATHER_VIEW: {
+        FELS_LIKE: "Feels like",
+        HUMIDITY: "Humidity",
+    },
     COMMONS: {
         CITY: 'city'
     }
